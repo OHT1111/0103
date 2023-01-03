@@ -1,0 +1,34 @@
+
+
+/* *은 모든 것에 적용 한다는 뜻
+마진: 0 , 패딩: 0 적용함.*/
+* { margin: 0; padding: 0;}
+
+/*html의 컨테이너 div의 자식 product_best 부분 설정*/
+.container .product_best {
+    display: flex; /*디스플레이 화면을 플렉스로 자유롭게 설정*/
+}
+
+/*컨테이너의 product_best의 best_box를 설정
+참고로 best_box는 main.js에서 생성됨.
+best_box는 상품의img와 설명 부분임.*/
+.container .product_best .best_box{
+    width: 300px; margin: 15px;
+    border: 2px saddlebrown solid;
+    /*(참고) div의 위치 구분을 위해서 style=border을 생성하였습니다...*/
+
+}
+
+/*컨테이너의 product_best의 best_box의 img를 설정*/
+.container .product_best .best_box img{
+    display: block; /*디스플레이를 블럭으로 설정*/
+    
+    width: 280px; height: 280px;
+    /*img사이즈를 280px의 정사각형 모양으로 설정*/
+
+    margin: 0 auto;
+    /*사진이미지가 너무 왼쪽으로 치우쳐 있어서 수정 */
+
+    border: 2px solid violet;
+    /*(참고) div의 위치 구분을 위해서 style=border을 생성하였습니다...*/
+}
